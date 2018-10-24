@@ -9,24 +9,24 @@
     <script src="JavaScript/main.js"></script>
 </head>
 <body>
-    <div class="top-bar">
-        Alejandra Gonzalez
-        <div class="menu-button" onclick="showMenu()">=</div>
-        <div class="close-menu" onclick="hideMenu()">x</div>
+    <nav class="top-bar">
+        <span class="open-menu">
+            <a href="#" onclick="openMenu()">&#9776;</a>
+        </span>
+        <!-- <h1>Alejandra Gonzalez</h1> -->
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="btn-close" onclick="closeMenu()">&times;</a>
+        <a class="active" href="">Home</a>
+        <a href="HTML/about.html">About</a>
+        <a href="HTML/projects.html">Projects</a>
+        <a href="HTML/skills.html">Skills & Experience</a>
+        <a href="HTML/contact.html">Contact</a>
+        <a href="">Resume</a>
+        <a href="https://github.com/alejandra-gonzalez">GitHub</a>
+        <a href="https://www.linkedin.com/in/alejandragonzalez2/">LinkedIn</a>
     </div>
-    <div class="sidebar">
-        <ul>
-            <li><a class="active" href="">Home</a></li>
-            <li><a href="HTML/about.html">About</a></li>
-            <li><a href="HTML/projects.html">Projects</a></li>
-            <li><a href="HTML/skills.html">Skills & Experience</a></li>
-            <li><a href="HTML/contact.html">Contact</a></li>
-            <li><a href="">Resume</a></li>
-            <li><a href="https://github.com/alejandra-gonzalez">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/alejandragonzalez2/">LinkedIn</a></li>
-        </ul>
-    </div>
-    <div class="content">
+    <div id="content">
         <h1>Hi, I'm Alejandra!</h1>
         I'm a recent computer science graduate with an interest in full stack web development and Android development.<br>
         <a href="HTML/projects.html">Projects</a><br>

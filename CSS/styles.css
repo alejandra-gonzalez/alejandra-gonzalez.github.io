@@ -2,80 +2,93 @@ body {
     background-color: #06A1CD;
 }
 
-.sidebar {
-    margin: -10px 0px 0px -50px;
-    width: 150px;
-    background-color: #027FA2;
-    height: 100%;
-    position: fixed;
-    overflow: auto;
-    padding: 15px;
-}
-
-.sidebar li {
-    list-style: none;
-}
-
-.menu-button {
-    margin-top: -20px;
-    margin-left: 15px;
-    text-align: left;
-}
-
 .top-bar {
-    margin-left: -10px;
-    width: 100%;
-    height: 30px;
-    position: fixed;
     background-color: #027FA2;
-    display: none;
-    text-align: center;
-    padding: 15px 0px 0px 0px;
-    color: #FFF400;
+    overflow: hidden;
+    height: 65px;
 }
 
-.close-menu {
-    margin-top: -20px;
-    margin-left: 15px;
-    text-align: left;
-    display: none;
-}
-
-.sidebar a {
+.top-bar a {
+    float: left;
     display: block;
+    color: #ffffff;
+    text-align: center;
     text-decoration: none;
-    color: #FFF400;
-    padding: 15px;
+    padding: 14px 16px;
 }
 
-.sidebar a:hover:not(.active) {
+.top-bar a:hover {
     background-color: #ffffff;
     color: #272727;
 }
 
-.sidebar a.active {
-    background-color: #D800B6;
+.top-bar h1 {
+    text-align: center;
+    color: #fff;
 }
 
-.content {
-    margin-left: 150px;
-    padding: 10px;
+.open-menu {
+    font-size: 30px;
 }
 
-@media screen and (max-width: 700px) {
-    .sidebar {
-        margin-top: 40px;
-        height: auto;
+.sidebar {
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 1;
+    background-color: #027FA2;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.sidebar a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover:not(.active){
+    color: rgb(146, 231, 255);
+}
+
+.sidebar .btn-close {
+    position: absolute;
+    top: 0px;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 36px;
+}
+
+@media(max-width: 700px){
+    #content {
+        transition: 0.3s;
+    }
+}
+
+@media(min-width: 700px){
+    .top-bar {
         display: none;
     }
-
-    .top-bar{
-        display: block;
+    .sidebar {
+        margin-top: -30px;
+        width: 250px !important;
+        opacity: 1;
     }
-
-    .sidebar a {float: left; width:75%;}
-    div.content {
-        margin: -10px 0px;
-        padding: 60px 10px;
+    .sidebar .btn-close {
+        display: none;
     }
-  }
+    #content {
+        transition: 0.3s;
+        margin-left: 260px;
+    }
+}
+
+.sidebar a.active {
+    color: #000;
+}

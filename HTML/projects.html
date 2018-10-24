@@ -9,24 +9,24 @@
     <script src="../JavaScript/main.js"></script>
 </head>
 <body>
-    <div class="top-bar">
-        Alejandra Gonzalez
-        <div class="menu-button" onclick="showMenu()">=</div>
-        <div class="close-menu" onclick="hideMenu()">x</div>
+    <nav class="top-bar">
+        <span class="open-menu">
+                <a href="#" onclick="openMenu()">&#9776;</a>
+        </span>
+        <h1>Alejandra Gonzalez</h1>
+    </nav>
+    <div class="sidebar" id="sidebar">
+        <a href="#" class="btn-close" onclick="closeMenu()">&times;</a>
+        <a href="../index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="">Projects</a>
+        <a href="skills.html">Skills & Experience</a>
+        <a href="contact.html">Contact</a>
+        <a href="">Resume</a>
+        <a href="https://github.com/alejandra-gonzalez">GitHub</a>
+        <a href="https://www.linkedin.com/in/alejandragonzalez2/">LinkedIn</a>
     </div>
-    <div class="sidebar">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="">Projects</a></li>
-            <li><a href="skills.html">Skills & Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="">Resume</a></li>
-            <li><a href="https://github.com/alejandra-gonzalez">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/alejandragonzalez2/">LinkedIn</a></li>
-        </ul>
-    </div>
-    <div class="content">
+    <div id="content">
         Projects here!!!
     </div>
 </body>
