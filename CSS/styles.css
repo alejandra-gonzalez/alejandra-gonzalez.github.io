@@ -24,7 +24,7 @@ body {
 
 .top-bar h1 {
     text-align: center;
-    color: #fff;
+    color: #ffffff;
 }
 
 .open-menu {
@@ -91,4 +91,44 @@ body {
 
 .sidebar a.active {
     color: #000;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+.project-card {
+    height: 300px;
+    width: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin-top: 20px;
+    padding: 1px 0px 0px 25px;
+}
+
+.project-date {
+    color: #272727;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.project-desc {
+    font-size: 20px;
+}
+
+.tech-tags {
+    background-color: rgb(146, 231, 255);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+.tech-tags:hover {
+    background-color: #ffffff;
 }
