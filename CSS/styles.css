@@ -101,8 +101,12 @@ h3 {
     font-size: 27px;
 }
 
+h3 img {
+    float: right;
+}
+
 .project-card {
-    height: 350px;
+    height: 400px;
     width: 250px;
     background-color: rgba(255, 255, 255, 0.5);
     margin-top: 20px;
@@ -135,3 +139,17 @@ h3 {
 .tech-tags:hover {
     background-color: #ffffff;
 } */
+
+footer {
+    margin-top: 25px;
+}
+
+.project-details {
+    padding: 1px 5px;
+    display: none;
+}
+
+.project-details .btn-close {
+    margin-left: 120px;
+    font-size: 25px;
+}
