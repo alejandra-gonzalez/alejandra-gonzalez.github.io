@@ -150,6 +150,7 @@ footer {
 }
 
 .project-details .btn-close {
+    color: #000;
     margin-left: 120px;
     font-size: 25px;
 }

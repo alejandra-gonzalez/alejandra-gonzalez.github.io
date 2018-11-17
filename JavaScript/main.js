@@ -10,13 +10,40 @@ var basics = document.getElementsByClassName('project-basics');
 var img = document.getElementsByClassName('project-image');
 
 function openProjectDetails(){
-    details[0].style.display = "block";
-    basics[0].style.display = "none";
-    img[0].style.display = "none";
+    getClassInstanceIndex ("project-card", function showProjectDetails(index){
+        details[index].style.display = "block";
+        basics[index].style.display = "none";
+        img[index].style.display = "none";
+    });
 }
 
 function closeProjectDetails() {
-    details[0].style.display = "none";
-    basics[0].style.display = "block";
-    img[0].style.display = "block";
+    getClassInstanceIndex ("project-card", function showProjectDetails(index){
+        details[index].style.display = "none";
+        basics[index].style.display = "block";
+        img[index].style.display = "block";
+    });
+}
+
+function getClassInstanceIndex(name,callback) {
+    var allElements = document.body.getElementsByTagName("*");
+    for(var x = 0, len = allElements.length; x < len; x++) {
+        if(allElements[x].className == name) {
+            allElements[x].onclick = getInstanceClicked;
+        }
+    }
+    function getInstanceClicked() {
+        var elementParent = this.parentNode;
+        var parentChildren = elementParent.childNodes;
+        var index = 0;
+        for(var x = 0; x < parentChildren.length; x++) {
+            if(parentChildren[x] == this) {
+                break;
+            }
+            if(parentChildren[x].className == name) {
+                index++;
+            }
+        }
+        callback.call(this,index);
+    }
 }
