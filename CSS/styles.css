@@ -3,9 +3,13 @@ body {
 }
 
 .top-bar {
+    top: 0px;
+    left: 0px;
     background-color: #027FA2;
     overflow: hidden;
     height: 65px;
+    position: fixed;
+    width: 100%;
 }
 
 .top-bar a {
@@ -68,7 +72,10 @@ body {
 
 @media(max-width: 700px){
     #content {
+        margin-top: 65px;
         transition: 0.3s;
+        position: absolute;
+        z-index: -1;
     }
 }
 
