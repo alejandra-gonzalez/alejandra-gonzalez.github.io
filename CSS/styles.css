@@ -10,6 +10,7 @@ body {
     height: 65px;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .top-bar a {
@@ -75,7 +76,7 @@ body {
         margin-top: 65px;
         transition: 0.3s;
         position: absolute;
-        z-index: -1;
+        z-index: 0;
     }
 }
 
