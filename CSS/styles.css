@@ -78,11 +78,14 @@ body {
     margin: 20px 10px 20px 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+    flex: 1;
+    padding-bottom: 10px;
 }
 
 .project-details {
     padding: 1px 5px;
     display: none;
+    width: 250px;
 }
 
 .project-details .btn-close {
@@ -101,7 +104,6 @@ body {
 
 @media(max-width: 510px){
     #content {
-        width: 470px;
         margin-top: 65px;
         transition: 0.3s;
         position: absolute;
@@ -113,7 +115,7 @@ body {
     }
 
     .project-card {
-        width: 100%;
+        width: 93%;
     }
 
     .project-card img, .project-card .btn-close {
