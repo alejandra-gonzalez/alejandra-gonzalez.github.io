@@ -73,7 +73,7 @@ body {
 
 .project-card {
     height: 400px;
-    width: 250px;
+    min-width: 300px;
     background-color: rgba(255, 255, 255, 0.5);
     margin: 20px 10px 20px 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -85,12 +85,13 @@ body {
 .project-details {
     padding: 1px 5px;
     display: none;
-    width: 250px;
+    min-width: 300px;
 }
 
 .project-details .btn-close {
     color: #000;
-    margin-left: 120px;
+    float: right;
+    margin-right: 15px;
     font-size: 25px;
 }
 
@@ -100,6 +101,8 @@ body {
 
 #project-container {
     display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
 }
 
 @media(max-width: 510px){
