@@ -72,6 +72,7 @@ body {
 }
 
 .project-card {
+    position: relative;
     height: 400px;
     min-width: 300px;
     background-color: rgba(255, 255, 255, 0.5);
@@ -125,8 +126,8 @@ body {
         display: none;
     }
 
-    .project-details {
-        display: block;
+    .project-basics, .project-details {
+        display: block !important;
     }
 }
 
@@ -174,6 +175,26 @@ h3 img {
 
 .project-desc {
     font-size: 20px;
+}
+
+.details-button {
+    background-color: rgb(146, 231, 255);
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.details-button a {
+    color: #272727;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.buttons-container {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: 20px;
 }
 
 /* .tech-tags {
