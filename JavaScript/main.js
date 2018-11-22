@@ -1,8 +1,12 @@
 function openMenu(){
     document.getElementById('sidebar').style.width = '250px';
+    document.getElementById('overlay').style.display = "block";
+    document.getElementById('overlay').style.zIndex = '1';
 }
 function closeMenu(){
     document.getElementById('sidebar').style.width = '0px';
+    document.getElementById('overlay').style.display = "none";
+    document.getElementById('overlay').style.zIndex = '-1';
 }
 
 var details = document.getElementsByClassName('project-details');
