@@ -81,6 +81,7 @@ body {
     transition: 0.3s;
     flex: 1;
     padding-bottom: 10px;
+    padding-right: 10px;
 }
 
 .project-details {
@@ -123,7 +124,7 @@ body {
     }
 
     .project-card img, .project-card .btn-close {
-        display: none;
+        display: none !important;
     }
 
     .project-basics, .project-details {
