@@ -242,3 +242,24 @@ h3 img {
 footer {
     margin-top: 25px;
 }
+
+.home-buttons {
+    background: #027FA2;
+    padding: 6px 11px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px rgb(0, 166, 212) solid;
+    opacity: 0.9;
+}
+
+.home-buttons:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.home-buttons a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+}
