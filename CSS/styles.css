@@ -2,6 +2,14 @@ body {
     background-color: #06A1CD;
 }
 
+a {
+    color: #272727;
+}
+
+a:hover {
+    color: rgba(255, 255, 255, 0.8);
+}
+
 .top-bar {
     top: 0px;
     left: 0px;
