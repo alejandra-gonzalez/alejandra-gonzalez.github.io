@@ -233,20 +233,6 @@ h3 img {
     background-color: #272727;
   }
 
-/* .tech-tags {
-    background-color: rgb(146, 231, 255);
-    border: none;
-    padding: 10px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    transition-duration: 0.4s;
-}
-
-.tech-tags:hover {
-    background-color: #ffffff;
-} */
-
 footer {
     margin-top: 25px;
 }
@@ -270,4 +256,22 @@ footer {
     font-size: 18px;
     text-decoration: none;
     font-family: Helvetica, Arial, sans-serif;
+}
+
+.contact-method {
+    background-color: rgb(146, 231, 255);
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    width: 300px;
+    text-align: center;
+    border-radius: 90px;
+}
+
+.contact-method a {
+    padding-left: 10px;
+}
+
+.contact-method a:hover {
+    color: #027FA2;
 }
