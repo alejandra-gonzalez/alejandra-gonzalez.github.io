@@ -11,24 +11,215 @@
 <body>
     <nav class="top-bar">
         <span class="open-menu" onclick="openMenu()">&#9776;</span>
-        <!-- <h1>Alejandra Gonzalez</h1> -->
     </nav>
     <div class="sidebar" id="sidebar">
         <span class="btn-close" onclick="closeMenu()">&times;</span>
         <a class="active" href="">Home</a>
-        <a href="HTML/about.html">About</a>
-        <a href="HTML/projects.html">Projects</a>
-        <a href="HTML/skills.html">Skills & Experience</a>
-        <a href="HTML/contact.html">Contact</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills & Experience</a>
+        <a href="#contact">Contact</a>
         <a href="">Resume</a>
         <a href="https://github.com/alejandra-gonzalez">GitHub</a>
         <a href="https://www.linkedin.com/in/alejandragonzalez2/">LinkedIn</a>
     </div>
     <div id="content">
-        <h1>Hi, I'm Alejandra!</h1>
-        I'm a recent computer science graduate with an interest in full stack web development and Android development.<br>
-        <button class="home-buttons"><a href="HTML/projects.html">Projects</a></button><br>
-        <button class="home-buttons"><a href="HTML/skills.html">Skills & Experience</a></button>
+        <div id="home">
+            <h1>Hi, I'm Alejandra!</h1>
+            I'm a recent computer science graduate with an interest in full stack web development and Android development.<br>
+            <button class="home-buttons"><a href="HTML/projects.html">Projects</a></button><br>
+            <button class="home-buttons"><a href="HTML/skills.html">Skills & Experience</a></button>
+        </div>
+        <div id="about">
+            <h1>Hello there!</h1>
+            Thank you for visiting! My name is Alejandra, but I prefer being called Ale or Alex. I'm a 23 year old from California :)<br>
+            I'm a little "baby dev" (term coined by my best friend) with a lot of hopes, dreams, hobbies and interests!
+            <h2>General</h2>
+            <ul><li>I found out that I was interested in web development since I messed around with HTML and CSS in high school.</li><li>The first programming language I learned, and the one I'm most comfortable with, is Java.</li><li>Once I learned that you can create Android apps with Java, Android development became one of my interests too.</li><li>I have no professional development experience, but I'm hoping that will change soon!</li><li>I really like learning new things, but for now I'll be focusing ondoing more with JavaScript.</li></ul>
+            <h2>History</h2>
+            I remember the day my family received our first desktop computer. For some reason, we received a bunch of CD-Roms with it.
+            There were a few math games for kids, but many of them were educational and looked like they were made for people of ages 13 and up.
+            I was only 5 at the time, so I was only really interested in playing the math games on our new Windows computer. I learned how 
+            to use the computer at home and at school. As I got older, I spent more time using the internet than the CD-Roms we had. I 
+            remember looking up information for school reports and reading about the solar system. I played a lot of games on everythinggirl.com,
+            especially the MyScene makeover game. The Barbie ones were fun too.<br><br>My sister made a MySpace account for herself and later on, she
+            would make an account for me. Around my freshman year of high school, I eventually grew bored of my personal account and made an account for a fictional character. That
+            changed my life. I made friends with other people, and I learned how to use Photoshop CS3 to make nicer images for my account. 
+            Later on, this community would move to a different site that looked like MySpace 1.0, where I met more people. I started developing 
+            an interest in making my own layouts. Luckily, I had a friend who wrote series of blogs on how to use HTML and CSS to make said layouts.
+            <br><br>I would occasionally offer to help others on the site with their own layouts. Sometimes the person would have a design ready, but other 
+            times I would have to come up with one. I noticed that I preferred writing code for a completed design than coming up with my own. I stayed 
+            on that site for years, writing HTML and CSS to change up my layout every few months.<br><br>When I was applying to colleges, all I knew
+            was that I liked writing HTML and CSS. I remember applying to a few UCs and Cal States with either a computer science major 
+            (I didn't know about the term "web design" at the time) or marine biology. I remember having to choose between Cal State Long Beach and 
+            UC Irvine. A game of eenie meanie mine mo lead to me persuing a Bachelor's in computer science at Cal State Long Beach. The computer
+            science classes there were very different from what I was expecting to learn, especially programming with Java, but I liked it. So I kept
+            going through my computer science courses.<br><br>It wasn't until junior year that I started putting things together. I was selected for a
+            program called "Google Applied CS", where I learned a bit about Android development in Java. I wanted to learn more. A year after that, I began 
+            my senior project class. It was a two semester class, and in the first semester, I joined a group to work on a web application we called Event Hopper.
+            I had so much fun learning about JavaScript, Node, Express, and MongoDB. Pair programming and working with others was so much fun!
+            The following semester was full of hard work, learning, fun, and more projects. My senior project group worked hard on Event Hopper and did everything we could. 
+            I started to work on the Weird But True web application with another group for a different course. I also took an Android development class, but I had trouble understanding 
+            the course material. I did whatever I could just to pass. A friend of mine recommended me to apply for the <a href="https://www.udacity.com/grow-with-google">Grow with Google Udacity Scholarship</a>. 
+            I applied for the Android Basics Track, since I was not satisfied with the Android development course I took on campus.<br><br>
+            After I graduated from Cal State Long Beach, I focused on applying for jobs. I did various interviews. January 10, 2018 was the day I found out I received a scholarship for the 
+            challenge course! I managed to received a scholarship to pursue an Android Basics Nanodegree. I also held a temporary job as a data entry clerk at a wholesale clothing company to make just enough to 
+            keep myself afloat. Now that I have received my Android Basics Nanodegree, I am actively seeking internships and junior or entry level development jobs. I am also working on this portfolio site and 
+            another side project while learning more about full stack development.
+        </div>
+        <div id="projects">
+            <h2>Projects</h2>
+            These are the projects I've done so far!
+            <div id="project-container">
+                <!-- Portfolio Site -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(../images/default-icon.png);"></div>
+                        <div class="project-basics">
+                            <h3>Portfolio Site <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8Y2lyY2xlIGN4PSIyNTYiIGN5PSI0NDgiIHI9IjY0IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxjaXJjbGUgY3g9IjI1NiIgY3k9IjY0IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                                    onclick="openProjectDetails()"/></h3> That's this site!
+                        </div>
+                        <div class="project-details">
+                            <h3>Details <span class="btn-close" onclick="closeProjectDetails()">&times;</span></h3><ul><li>HTML, CSS, JavaScript</li></ul>
+                            <div class="buttons-container">
+                                <button class="details-button">Private GitHub Repo</button>
+                            </div>
+                        </div>
+                </div>
+                <!-- Inventory App -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(images/inventory-app.png);"></div>
+                        <div class="project-basics">
+                            <h3>Inventory App <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8Y2lyY2xlIGN4PSIyNTYiIGN5PSI0NDgiIHI9IjY0IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxjaXJjbGUgY3g9IjI1NiIgY3k9IjY0IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                                    onclick="openProjectDetails()"/></h3> Android application that tracks the inventory of a retail store.
+                        </div>
+                        <div class="project-details">
+                            <h3>Details <span class="btn-close" onclick="closeProjectDetails()">&times;</span></h3>
+                            <ul><li>Created for Udacity's Android Basics Nanodegree</li><li>View, add, update, and delete products stored in SQLite database</li><li>Java, SQLite</li></ul>
+                            <div class="buttons-container">
+                                <button class="details-button"><a href="https://github.com/alejandra-gonzalez/InventoryApp">View Source Code</a></button>
+                            </div>
+                        </div>
+                </div>
+                <!-- Latest in Tech News -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(images/latest-in-tech-news.png);"></div>
+                        <div class="project-basics">
+                            <h3>Latest in Tech News <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8Y2lyY2xlIGN4PSIyNTYiIGN5PSI0NDgiIHI9IjY0IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxjaXJjbGUgY3g9IjI1NiIgY3k9IjY0IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                                    onclick="openProjectDetails()"/></h3> Android application that displays news stories from The Guardian.
+                        </div>
+                        <div class="project-details">
+                            <h3>Details <span class="btn-close" onclick="closeProjectDetails()">&times;</span></h3>
+                            <ul><li>Created for Udacity's Android Basics Nanodegree</li><li>View tech related news stories queried from The Guardian's API</li>
+                                <li>Preferences that modify which articles are displayed</li><li>Java, JSON</li></ul>
+                            <div class="buttons-container">
+                                <button class="details-button"><a href="https://github.com/alejandra-gonzalez/LatestInTechNews">View Source Code</a></button>
+                            </div>
+                        </div>
+                </div>
+                <!-- South Gate, CA -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(images/south-gate-ca.png);"></div>
+                        <div class="project-basics">
+                            <h3>South Gate, CA <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8Y2lyY2xlIGN4PSIyNTYiIGN5PSI0NDgiIHI9IjY0IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxjaXJjbGUgY3g9IjI1NiIgY3k9IjY0IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                                    onclick="openProjectDetails()"/></h3> An Android application that shows various places that are located in the city of South Gate, California.
+                        </div>
+                        <div class="project-details">
+                            <h3>Details <span class="btn-close" onclick="closeProjectDetails()">&times;</span></h3>
+                            <ul><li>Created for Udacity's Android Basics Nanodegree</li><li><strong>Note:</strong> images used are stock photos and not pictures of the actual locations.</li>
+                                <li>Navigate through the different categories by swiping from one tab to another</li><li>Java</li></ul>
+                            <div class="buttons-container">
+                                <button class="details-button"><a href="https://github.com/alejandra-gonzalez/SouthGateCA">View Source Code</a></button>
+                            </div>
+                        </div>
+                </div>
+                <!-- Emily's Musical Box -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(images/emilys-musical-box.png);"></div>
+                        <div class="project-basics">
+                            <h3>Emily's Musical Box <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8Y2lyY2xlIGN4PSIyNTYiIGN5PSI0NDgiIHI9IjY0IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxjaXJjbGUgY3g9IjI1NiIgY3k9IjY0IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                                    onclick="openProjectDetails()"/></h3> A small Android application that emulates a music player.
+                        </div>
+                        <div class="project-details">
+                            <h3>Details <span class="btn-close" onclick="closeProjectDetails()">&times;</span></h3>
+                            <ul><li>Created for Udacity's Android Basics Nanodegree</li>
+                                <li>View song details by press its play button and clicking on the Now Playing button</li><li>Java</li></ul>
+                            <div class="buttons-container">
+                                <button class="details-button"><a href="https://github.com/alejandra-gonzalez/EmilysMusicalBox">View Source Code</a></button>
+                            </div>
+                        </div>
+                </div>
+                <!-- Programming Concepts Quiz -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(images/programming-concepts-quiz.png);"></div>
+                        <div class="project-basics">
+                            <h3>Code Concepts Quiz <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8Y2lyY2xlIGN4PSIyNTYiIGN5PSI0NDgiIHI9IjY0IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxjaXJjbGUgY3g9IjI1NiIgY3k9IjY0IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                                    onclick="openProjectDetails()"/></h3> A small Android application that emulates a music player.
+                        </div>
+                        <div class="project-details">
+                            <h3>Details <span class="btn-close" onclick="closeProjectDetails()">&times;</span></h3>
+                            <ul><li>Created for Udacity's Android Basics Nanodegree</li>
+                                <li>Users can view just their score, or view their score and the correct solutions to the questions.</li><li>Java</li></ul>
+                            <div class="buttons-container">
+                                <button class="details-button"><a href="https://github.com/alejandra-gonzalez/ProgrammingConceptsQuiz">View Source Code</a></button>
+                            </div>
+                        </div>
+                </div>
+                <!-- Weird But True -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(images/weird-but-true.png);"></div>
+                        <div class="project-basics">
+                            <h3>Weird but True <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8Y2lyY2xlIGN4PSIyNTYiIGN5PSI0NDgiIHI9IjY0IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxjaXJjbGUgY3g9IjI1NiIgY3k9IjY0IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                                    onclick="openProjectDetails()"/></h3> This web application allows the user to view, add, and delete items in a database.
+                        </div>
+                        <div class="project-details">
+                            <h3>Details <span class="btn-close" onclick="closeProjectDetails()">&times;</span></h3>
+                            <ul><li>Group project for software design and architecture course. Team of 3.</li><li>Users can view, add, and delete items in a database. 
+                                    The database was to be used in an Amazon Alexa Skill, but unfortunately, the Alexa Skill was removed from the store.</li>
+                                <li>JavaScript - Node.js, Express.js, Pug.js, and MongoDB</li></ul>
+                            <div class="buttons-container">
+                                <button class="details-button"><a href="https://weird-but-true.herokuapp.com">View Live</a></button>
+                                <button class="details-button"><a href="https://github.com/daniawareh/Weird-but-True-Web-Application">View Source Code</a></button>
+                            </div>
+                        </div>
+                </div>
+                <!-- Event Hopper -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url(images/event-hopper.png);"></div>
+                        <div class="project-basics">
+                            <h3>Event Hopper <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iMzJweCIgaGVpZ2h0PSIzMnB4Ij4KPGc+Cgk8Zz4KCQk8Zz4KCQkJPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCQk8Y2lyY2xlIGN4PSIyNTYiIGN5PSI0NDgiIHI9IjY0IiBmaWxsPSIjMDAwMDAwIi8+CgkJCTxjaXJjbGUgY3g9IjI1NiIgY3k9IjY0IiByPSI2NCIgZmlsbD0iIzAwMDAwMCIvPgoJCTwvZz4KCTwvZz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K"
+                                    onclick="openProjectDetails()"/></h3> An unofficial campus event management system.
+                        </div>
+                        <div class="project-details">
+                            <h3>Details <span class="btn-close" onclick="closeProjectDetails()">&times;</span></h3>
+                            <ul><li><strong>Note: This is an incomplete project.</strong> Not all features work correctly.</li>
+                                <li>Group project for senior design course. Team of 4</li><li>JavaScript - Node.js, Express.js, Pug.js, and MongoDB</li>
+                                <li>Worked primarily on the back end</li></ul>
+                            <div class="buttons-container">
+                                <button class="details-button"><a href="https://eventhopper.herokuapp.com">View Live</a></button>
+                                <button class="details-button">Private GitHub Repo</button>
+                            </div>
+                        </div>
+                </div>
+            </div> <!-- End project container-->
+            <footer id="footer">
+                Three Dots Icon by <a href="https://www.flaticon.com/authors/those-icons">Those Icons</a> from Flaticon
+            </footer>
+        </div>
+        <div id="skills">
+            <h1>Programming Languages</h1><ul><li>JavaScript</li><li>Java</li></ul>
+        <h1>Databases</h1><ul><li>SQLite</li><li>MongoDB</li></ul>
+        <h1>Frameworks and Other Things</h1><ul><li>Git and GitHub</li><li>HTML</li>
+            <li>CSS</li><li>JSON</li><li><a href="https://nodejs.org/en/">Node.js</a></li><li><a href="https://expressjs.com">Express</a></li><li><a href="https://pugjs.org/api/getting-started.html">Pug</a></li></ul>
+        </div>
+        <div id="contact">
+            <h1>Contact Me</h1>
+        <div class="contact-method"><img style="vertical-align:middle" src="https://img.icons8.com/ios/50/000000/secured-letter.png"><a href="mailto:gonzalez.alejandra.013@gmail.com">gonzalez.alejandra.013@gmail.com</a></div><br><br>
+        <div class="contact-method"><img style="vertical-align:middle" src="https://img.icons8.com/ios/50/000000/linkedin-filled.png"><a href="https://www.linkedin.com/in/alejandragonzalez2/">linkedin.com/in/alejandragonzalez2/</a></div><br><br>
+        <div class="contact-method"><img style="vertical-align:middle" src="https://img.icons8.com/ios/50/000000/github-filled.png"><a href="https://github.com/alejandra-gonzalez">github.com/alejandra-gonzalez</a></div>
+        <footer id="footer">
+            Icons on this page by <a href="https://icons8.com/">Icons8</a>
+        </footer>
+        </div>
     </div>
 </body>
 <div id="overlay"></div>
