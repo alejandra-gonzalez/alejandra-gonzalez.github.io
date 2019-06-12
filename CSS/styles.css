@@ -10,7 +10,7 @@ a:hover {
     color: rgba(255, 255, 255, 0.8);
 }
 
-.top-bar {
+/* .top-bar {
     top: 0px;
     left: 0px;
     background-color: #027FA2;
@@ -84,7 +84,7 @@ a:hover {
     margin-left: 50px;
     font-size: 36px;
     color: #ffffff;
-}
+} */
 
 .project-card {
     position: relative;
@@ -127,14 +127,14 @@ a:hover {
 }
 
 @media(max-width: 510px){
-    #content {
+    /* #content {
         width: 97%;
         margin-top: 65px;
         transition: 0.3s;
         position: absolute;
         z-index: 0;
         margin-right: 10px;
-    }
+    } */
 
     #project-container {
         flex-direction: column;
@@ -154,7 +154,7 @@ a:hover {
 }
 
 @media(min-width: 510px){
-    .top-bar {
+    /* .top-bar {
         display: none;
     }
     .sidebar {
@@ -164,11 +164,11 @@ a:hover {
     }
     .sidebar .btn-close {
         display: none;
-    }
-    #content {
+    } */
+    /* #content {
         transition: 0.3s;
         margin-left: 260px;
-    }
+    } */
 
     #overlay {
         display: none !important;
@@ -181,9 +181,9 @@ a:hover {
       }
 }
 
-.sidebar a.active {
+/* .sidebar a.active {
     color: #000;
-}
+} */
 
 h2 {
     font-size: 32px;
@@ -274,4 +274,22 @@ footer {
 
 .contact-method a:hover {
     color: #027FA2;
+}
+
+#content {
+    font-family: 'Playfair Display', serif;
+    padding-top: 25px;
+    padding-left: 50px;
+}
+
+#content h1, #content h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+#home, #skills, #contact {
+    height: 100vh;
+}
+
+#about, #projects, #skills, #contact {
+    padding-top: 60px;
 }
