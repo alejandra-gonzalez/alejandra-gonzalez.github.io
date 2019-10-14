@@ -51,11 +51,8 @@ a:hover {
 }
 
 @media(max-width: 510px){
-    #project-container {
-        flex-direction: column;
-    }
-
     .project-card {
+        padding: 20px 10px 10px 10px;
         height: 550px;
     }
 
@@ -96,20 +93,6 @@ h3 img {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.details-button {
-    background-color: rgb(146, 231, 255);
-    border: none;
-    padding: 10px;
-    text-align: center;
-    font-size: 15px;
-}
-
-.details-button a {
-    color: #272727;
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .buttons-container {
     position: absolute;
     bottom: 0px;
@@ -146,7 +129,7 @@ footer {
     font-family: 'Playfair Display', serif;
 }
 
-#content h1, #content h2, h3, #home .btn a {
+#content h1, #content h2, h3, .btn a, .buttons-container .btn {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -158,7 +141,7 @@ footer {
     padding: 60px 25px 0px 25px;
 }
 
-.navbar-color, #home .btn {
+.navbar-color, #home .btn, .buttons-container .btn {
     background-color: #333A56;
 }
 
@@ -178,17 +161,32 @@ footer {
     padding: 6px 11px;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+#home .btn, .buttons-container .btn {
     border: 1px #333A56 solid;
 }
 
-#home .btn:hover {
+.btn:hover {
     background-color: #52658f;
     border: 1px #52658f solid;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-#home .btn a {
+#home .btn a, .buttons-container .btn a{
     color: white;
     font-size: 18px;
     text-decoration: none;
+}
+
+.buttons-container .btn {
+    border: 1px #333A56 solid;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: white;
+}
+
+#projects {
+    background-color: #F7F5E6;
 }
